@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.carlitos.todolist.controllers.Controller">
+   <children>
+      <AnchorPane layoutX="-7.0" prefHeight="97.0" prefWidth="830.0" style="-fx-background-color: orange;" AnchorPane.bottomAnchor="428.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="321.0" layoutY="19.0" text="TodoList ">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnCreate" layoutX="84.0" layoutY="158.0" mnemonicParsing="false" onMouseClicked="#onClickCreate" prefHeight="42.0" prefWidth="121.0" style="-fx-background-color: yellow; -fx-border-radius: 10; -fx-border-color: black; -fx-border-radius: 10;" text="Create new task" />
+      <Label fx:id="lbTitle" layoutX="110.0" layoutY="240.0" text="Titile">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbDesc" layoutX="82.0" layoutY="320.0" text="Desciption">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" layoutX="48.0" layoutY="271.0" />
+      <TextField fx:id="txtDesc" layoutX="33.0" layoutY="370.0" prefHeight="34.0" prefWidth="382.0" />
+      <Label layoutX="588.0" layoutY="171.0" text="My tasks">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cbList" layoutX="555.0" layoutY="215.0" onAction="#onClickTitle" prefWidth="150.0" />
+      <Button fx:id="btnClean" layoutX="198.0" layoutY="470.0" mnemonicParsing="false" onMouseClicked="#onClickClean" prefHeight="49.0" prefWidth="97.0" style="-fx-background-color: lightblue;" text="Clean" />
+      <Button fx:id="btnComplete" layoutX="62.0" layoutY="477.0" mnemonicParsing="false" onMouseClicked="#onClickFinish" prefHeight="34.0" prefWidth="121.0" style="-fx-background-color: lightgreen;" text="Task completed" />
+      <Button fx:id="btnExit" layoutX="318.0" layoutY="470.0" mnemonicParsing="false" onMouseClicked="#onClickExit" prefHeight="49.0" prefWidth="97.0" style="-fx-background-color: orange;" text="Exit" />
+      <Button fx:id="btnAddTask" layoutX="424.0" layoutY="363.0" mnemonicParsing="false" onMouseClicked="#onAddTask" prefHeight="49.0" prefWidth="97.0" style="-fx-background-color: lightgreen;" text="Add task" />
+   </children>
+</AnchorPane>
